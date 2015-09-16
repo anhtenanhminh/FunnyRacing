@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5483D37E-DA07-4852-BFED-7D821FC0CE96}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>_06110086_06110045_CoCaNgua</RootNamespace>
+    <AssemblyName>06110086_06110045_CoCaNgua</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChoiceTeam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChoiceTeam.Designer.cs">
+      <DependentUpon>ChoiceTeam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyBoard.cs" />
+    <Compile Include="MyButton.cs" />
+    <Compile Include="MyCage.cs" />
+    <Compile Include="MyDice.cs" />
+    <Compile Include="MyPieces.cs" />
+    <Compile Include="MyProps.cs" />
+    <Compile Include="PlayMode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlayMode.Designer.cs">
+      <DependentUpon>PlayMode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ChoiceTeam.resx">
+      <DependentUpon>ChoiceTeam.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlayMode.resx">
+      <DependentUpon>PlayMode.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RacingHorses.resx">
+      <DependentUpon>RacingHorses.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RacingHorses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RacingHorses.Designer.cs">
+      <DependentUpon>RacingHorses.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\horse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Point.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImageButton\0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImageButton\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImageButton\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImageButton\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImageButton\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImageButton\ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImageButton\option0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImageButton\option1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImageButton\option2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\selectteam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\ImageText\line.png" />
+    <None Include="bin\Debug\Resources\ImageText\blue.png" />
+    <None Include="bin\Debug\Resources\ImageText\red.png" />
+    <None Include="bin\Debug\Resources\ImageText\green.png" />
+    <None Include="bin\Debug\Resources\ImageText\yellow.png" />
+    <None Include="bin\Debug\Resources\ImageText\mode.png" />
+    <None Include="bin\Debug\Resources\ImageButton\ok.png" />
+    <None Include="bin\Debug\Resources\ImageButton\cance.png" />
+    <None Include="bin\Debug\Resources\ImageButton\cancel.png" />
+    <None Include="bin\Debug\Resources\ImageText\player.png" />
+    <None Include="bin\Debug\Resources\ImageText\nonprops.png" />
+    <None Include="bin\Debug\Resources\ImageText\props.png" />
+    <None Include="bin\Debug\Resources\ImageText\com.png" />
+    <None Include="bin\Debug\Resources\ImageSkill\ghost.png" />
+    <None Include="bin\Debug\Resources\ImageSkill\shield.png" />
+    <None Include="bin\Debug\Resources\ImageSkill\turnup.png" />
+    <None Include="bin\Debug\Resources\ImageSkill\bomb.png" />
+    <None Include="bin\Debug\Resources\ImageSkill\speed.png" />
+    <None Include="bin\Debug\Resources\ImageSkill\attack.png" />
+    <None Include="bin\Debug\Resources\ImageShake\blue_shake.png" />
+    <Content Include="Resources\ImageArrow\arrowleft.png" />
+    <Content Include="Resources\ImageArrow\arrowright.png" />
+    <Content Include="Resources\ImageButton\cancel.png" />
+    <Content Include="Resources\ImageText\blue.png" />
+    <Content Include="Resources\ImageText\cance.png" />
+    <Content Include="Resources\ImageText\green.png" />
+    <Content Include="Resources\ImageText\line.png" />
+    <Content Include="Resources\ImageText\mode.png" />
+    <Content Include="Resources\ImageText\nonprops.png" />
+    <Content Include="Resources\ImageText\ok.png" />
+    <Content Include="Resources\ImageText\player.png" />
+    <Content Include="Resources\ImageText\props.png" />
+    <Content Include="Resources\ImageText\red.png" />
+    <Content Include="Resources\ImageText\yellow.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
